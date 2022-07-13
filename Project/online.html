@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>ICON Pathology Laboratory</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid" >
+      <a class="navbar-brand" href="#"><b>ICON Pathology Laboratory</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index2.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="book_home_visit.html">Home Visit</a></li>
+              <li><a class="dropdown-item" href="online.html">Online Appointment</a></li>
+              <li><a class="dropdown-item" href="Enquiry.html">Enuiry</a></li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Admin</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <img class="book_a_visit" src="Gallery/online.jpg"  width="750" height="150" alt="home visit2" title="home visit2" class="img-fluid" >
+
+
+  <section class="main_heading my-4 pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-8 col-10 cl-md-8 mx-auto">
+          <form  class="me" method="GET" action="http://localhost:8080/examples/servlets/servlet/Online">
+            <div class="mb-3">
+              <hr  class="w-25 mx-auto"/>
+              <p><b>Please fill up info for Home Visit Test</b></p>
+
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Name</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Patient's Name - Surname" name="oname" required>
+              </div>
+
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="abc@example.com" name="e">
+
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+
+            </div>
+
+            <div class="mb-3">
+              
+              <select class="form-select" aria-label="Default select example" name="time" required>
+                <option selected>Prefered Time</option>
+                
+                <option value="7.30 am">7.30 am</option>
+                <option value="8.00 am">8.00 am</option>
+                <option value="8.30 am">8.30 am</option>
+                <option value="9.00 am">9.00 am </option>
+                <option value="9.30 am">9.30 am</option>
+                <option value="10.00 am">10.00 am</option>
+                <option value="10.30 am">10.30 am</option>
+                <option value="11.00 am">11.00 am</option>
+                <option value="11.30 am">11.30 am</option>
+                <option value="12.00 am">12.00 am</option>  
+                <option value="12.30 pm">12.30 pm</option>
+                <option value="1.00 pm">1.00 pm</option>
+                <option value="1.30 pm">1.30 pm</option>
+                <option value="2.00 pm">2.00 pm</option>
+                <option value="2.30 pm">2.30 pm</option>
+                <option value="3.00 pm">3.00 pm</option>
+                <option value="3.30 pm">3.30 pm</option>
+                <option value="4.00 pm">4.00 pm</option>
+                <option value="4.30 pm">4.30 pm</option>
+                <option value="5.00 pm">5.00 pm</option>
+                <option value="5.30 pm">5.30 pm</option>
+                
+                <option value="6.00 pm">6.00 pm</option>
+                <option value="6.30 pm">6.30 pm</option>
+                <option value="7.00 pm">7.00 pm</option>
+                <option value="7.30 pm">7.30 pm</option>
+              </select>
+
+            </div>
+
+            <div class="mb-3">
+              <label for="checkinDate" class="form-label">Checkin Date</label>
+              <input type="date" name="indate" class="form-control" required>
+            </div>
+            
+            <div class="mb-3">
+              <select class="form-select" aria-label="Default select example" name="ttype">
+                <option selected>Select Test</option>
+                <option value="ECG">ECG</option>
+                <option value="Blood Test">Blood Test</option>
+                <option value="Covid RTPCR">Covid RTPCR</option>
+                <option value="CT Scan">CT Scan</option> 
+                <option value="Sonography">Sonography</option>
+                <option value="2D Echo">2D Echo</option>
+                <option value="X-Ray">X-Ray</option>
+                <option value="Color Doppler">Color Doppler</option>
+                <option value="Stress">Stress </option>
+              </select>
+
+            </div>
+
+            <div class="mb-3">
+             <label for="exampleInputPassword1" class="form-label">Mobile Number</label>
+             <input type="text" class="form-control" id="exampleInputPassword1" name="phno" required>
+           </div>
+
+           <button type="submit" class="btn btn-primary" value="save">Submit</button>
+         </form>
+       </div>
+     </div>
+
+   </div>
+
+ </section>
+
+
+
+ <footer class="bg-secondary text-center text-white">
+  <p>@copyright ICON Pathology Lab</p>
+</footer>
+
+<!--  Option 2: Separate Popper and Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+
+  var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+    target: '#navbar-example'
+  })
+</script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
